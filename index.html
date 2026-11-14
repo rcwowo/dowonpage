@@ -13,7 +13,6 @@
       --blueprint: #0a3a6e;
       --grid-line: rgba(160, 200, 240, 0.45);
       --sticky: #ffe566;
-      --sticky-fold: #e0c93a;
       --ink: #1a1a1a;
       --pen: #c62828;
     }
@@ -112,7 +111,7 @@
     }
 
     .note {
-      --tilt: -3.4deg;
+      --tilt: -2.6deg;
       position: relative;
       width: min(92vw, 26rem);
       aspect-ratio: 1;
@@ -142,24 +141,6 @@
         rgba(0, 0, 0, 0.18) 0%,
         transparent 68%
       );
-      pointer-events: none;
-    }
-
-    .note::after {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      width: 2.6rem;
-      height: 2.6rem;
-      background: linear-gradient(
-        225deg,
-        #f7e98a 0%,
-        #f0dc5c 42%,
-        #d4b82e 100%
-      );
-      clip-path: polygon(100% 0, 0 100%, 100% 100%);
-      box-shadow: -5px -5px 12px rgba(0, 0, 0, 0.28);
       pointer-events: none;
     }
 
